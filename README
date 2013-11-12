@@ -1,0 +1,9 @@
+Screen Emulator
+
+Purpose: 
+--------
+This is a screen emulator. It may be useful for web developers who need to test screen sizes not accessible to them with their current screen size, specifically when considering responsive design.
+
+Info:
+-----
+This is the first version of this application. It includes basic functionality.
