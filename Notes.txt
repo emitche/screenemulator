@@ -1,0 +1,6 @@
+﻿attr jquery
+
+Potentially useful resources:
+
+http://npr.github.io/responsiveiframe/
+
