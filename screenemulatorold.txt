@@ -1,8 +1,0 @@
-﻿<!DOCTYPE html>
-<html dir="ltr;" lang="en-us">
-
-<body>
-<iframe width="" height="" src="file:///C:/Users/emitchell/Documents/Work/Dave/IssueLog/new.html">
-</iframe>
-</body>
-</html>

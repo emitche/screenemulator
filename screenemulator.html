@@ -2,30 +2,25 @@
 
 <html>
   <head>
-	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />-->
+    <title>Screen Emulator</title>
     <link rel="stylesheet" type="text/css" href="css/screen.css" />
   </head>
   
   <body>
-  
-<!-- Removing submit and/or removing form tags fixes problem with site not updating. The submit button inside a form does something that sends information to a database, which is not what I want at all. So now it's fixed. Thanks, Ben, of AO.
--->
 
-  <form id="userInput">
-    <input id="url" name="url" type="text" placeholder="Enter site url." />
-    <input id="dWidth" name="displayWidth" type="text" placeholder="width in pixels" />
-    <input id="dHeight" name="displayHeight" type="text" placeholder="height in pixels" />
-	<input name="submit" type="button" onclick="formSubmit();" value="Update" />
-  </form>
-    
-  <iframe id="displayPage" name="displayPage" >
-  </iframe>
+    <form id="userInput">
+      <input id="url" name="url" type="text" placeholder="Enter site url." />
+      <input id="dWidth" name="displayWidth" type="text" placeholder="width in pixels" />
+      <input id="dHeight" name="displayHeight" type="text" placeholder="height in pixels" />
+      <input name="submit" type="button" onclick="formSubmit();" value="Update" />
+    </form>
+      
+    <iframe id="displayPage" name="displayPage" >
+    </iframe>
   
   	<script type="text/javascript" src="js/jquery-1.10.2.js" /></script>
-	<!--<script type="text/javascript" src="js/bootstrap.js" /></script>-->
     <script type="text/javascript" src="js/screen.js" /></script>
   
   </body>
   
 </html>
-
