@@ -4,31 +4,45 @@
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;
  }
- 
-iframe {
-border: none;
-}
 
 body {
 font-size: 110%;
 background-color: #eef2f3;
 font-family: Verdana, Arial, sans-serif;
+padding: 1%;
 }
 
 input[type='text'] {
 font-size: 110%;
 border-radius: 4px;
 border: none;
-padding: .3%;
+padding: .75%;
+border: solid black 1px;
 }
 
 button, input[type='button'], input[type='submit'] {
 background-color: rgba(76,150,193,1);
-padding: .3%;
+padding: .75%;
 color: white;
 font-weight: bold;
 border-radius: 5px;
 border: none;
+font-size: 110%;
+}
+
+
+input, button, iframe {
+margin: .75%;
+}
+
+.website {
+width: 20em;
+max-width: 100%;
+}
+
+/* Size Parameters */
+.sizePar {
+width: 5em;
 }
 
 /* Style inputs, buttons, and page through CSS and not jQuery UI */
@@ -38,3 +52,10 @@ section {
 margin: 5% 1%;
 }
 
+
+iframe {
+border: none;
+border: solid black 1px;
+padding: .25%;
+border-radius: 2px;
+}
