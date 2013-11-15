@@ -2,7 +2,11 @@ Screen Emulator
 
 Purpose: 
 --------
-This is a screen emulator. It may be useful for web developers who need to test screen sizes not accessible to them with their current screen size, specifically when considering responsive design.
+This is a screen emulator. It may be useful for web developers who need to test screen sizes not accessible to them with their current screen size, specifically when considering responsive design. 
+
+Where:
+------
+You can visit http://emitche.github.io/screenemulator to use this tool.
 
 Info:
 -----
