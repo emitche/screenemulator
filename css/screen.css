@@ -12,6 +12,7 @@ height: 500px;
 }
 */
 
+
 body {
 font-size: 110%;
 background-color: #eef2f3;
@@ -21,7 +22,6 @@ input[type='text'] {
 font-size: 110%;
 border-radius: 2px;
 }
-
 
 button, input[type='button'], input[type='submit'] {
 background-color: rgba(76,150,193,1);
@@ -33,5 +33,4 @@ background-color: rgba(76,150,193,1);
 section {
 margin: 5% 1%;
 }
-
 

@@ -16,7 +16,7 @@
 		
 		// Update the width and height of the frame.
 		$("#displayPage").attr("width", $("#dWidth").val());
-		$("#displaypage").attr("height", $("#dHeight").val());
+		$("#displayPage").attr("height", $("#dHeight").val());
 		
 	};
 	
