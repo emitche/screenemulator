@@ -2,25 +2,59 @@
 
 <html>
   <head>
-    <title>Screen Emulator</title>
-    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+  <title>Screen Emulator</title>
+	<!--<link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui-1.10.3.custom/css/graytheme/jquery-ui-1.10.3.custom.css" />-->
+  <link rel="stylesheet" type="text/css" href="css/screen.css" />
+	<script type="text/javascript" src="js/jquery-1.10.2.js" /></script>
+	<script type="text/javascript" src="js/screen.js" /></script>
+	<script src="jqueryui/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
   </head>
   
   <body>
 
-    <form id="userInput">
-      <input id="url" name="url" type="text" placeholder="Enter site url." />
-      <input id="dWidth" name="displayWidth" type="text" placeholder="width in pixels" />
-      <input id="dHeight" name="displayHeight" type="text" placeholder="height in pixels" />
-      <input name="submit" type="button" onclick="formSubmit();" value="Update" />
-    </form>
+    <section class="basic">
+    <h1>Display a site with a specific screen size</h1>
+      <form id="userInput">
+        <input id="uurl" name="uurl" type="text" placeholder="Enter site url." />
+        <input id="dWidth" name="displayWidth" type="text" placeholder="width in pixels" />
+        <input id="dHeight" name="displayHeight" type="text" placeholder="height in pixels" />
+        <input name="usubmit" type="button" onclick="formSubmit();" value="Update" />
+      </form>
+        
+      <iframe id="displayPage" name="displayPage" >
+      </iframe>
+    </section>
+  
+  
+    <section class="draggable">
+    <h1>Display a site in a draggable/rescalable/resizable frame</h1>
+      <form id="resizableInput">
+        <input id="rurl" name="rurl" type="text" placeholder="Enter site url." />
+        <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
+      </form>
       
-    <iframe id="displayPage" name="displayPage" >
-    </iframe>
-  
-  	<script type="text/javascript" src="js/jquery-1.10.2.js" /></script>
-    <script type="text/javascript" src="js/screen.js" /></script>
-  
+      <iframe id="rDisplay" name="rDisplay" >
+      </iframe>
+    </section>
+    
+    
+    <section class="presized">
+    <h1>Display a site in phone, tablet, and desktop size</h1>
+      <form id="multiInput">
+        <input id="murl" name="murl" type="text" placeholder="Enter site url." />
+        <input name="msubmit" type="button" onclick="multiSubmit();" value="Update" />
+      </form>
+      
+      <iframe id="mDisSm" name="mDisSm" class="multiScreen" width="320px" height="400px">
+      </iframe>
+      
+      <iframe id="mDisMed" name="mDisMed" class="multiScreen" width="800px" height="1280px">
+      </iframe>
+      
+      <iframe id="mDisLar" name="mDisLar" class="multiScreen" width="1366px" height="768px">
+      </iframe>
+    </section>
+    
   </body>
   
 </html>
