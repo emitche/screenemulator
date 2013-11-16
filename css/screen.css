@@ -54,4 +54,5 @@ border: none;
 border: solid black 1px;
 padding: .25%;
 border-radius: 2px;
+display: block;
 }
