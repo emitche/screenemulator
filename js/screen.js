@@ -43,7 +43,12 @@
     };
   
   
+/*  
   $("#rescale").resizable({
-      alsoResize : '#rDisplay'
+      alsoResize: '#rDisplay'
     });
+*/
+
+
+  $("#rescale").resizable();
  
