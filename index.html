@@ -3,11 +3,13 @@
 <html>
   <head>
   <title>Screen Emulator</title>
-	<link rel="stylesheet" type="text/css" href="jqueryui/css/no-theme/jquery-ui-1.9.2.custom.css" />
+  
+  <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui-1.10.3.custom/css/graytheme/jquery-ui-1.10.3.custom.css" />
   <link rel="stylesheet" type="text/css" href="css/screen.css" />
 	<script type="text/javascript" src="js/jquery-1.10.2.js" /></script>
 	<script type="text/javascript" src="js/screen.js" /></script>
-	<script src="jqueryui/js/jquery-ui-1.9.2.custom.js"></script>
+	<script src="jqueryui/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+  
   </head>
   
   <body>
@@ -36,13 +38,11 @@
         <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
       </form>
      
-    <div id="rescaleDiv">
+    <div id="rescaleDiv" class="ui-widget-content">
     <p>Test</p>
-    <iframe id="rDisplay" name="rDisplay" >
+    <iframe id="rDisplay" name="rDisplay" class="ui-widget-content">
     </iframe
     </div>
-    
-      
      
     </section>
     
