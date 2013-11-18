@@ -56,3 +56,8 @@ padding: .25%;
 border-radius: 2px;
 display: block;
 }
+
+#rDisplay {
+width: 98%;
+padding: 0%;
+}

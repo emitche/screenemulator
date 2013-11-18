@@ -3,6 +3,11 @@
 // Purpose: This is a screen emulator. It may be useful for web developers who need to test screen sizes not accessible to them with their current screen size, specifically when considering responsive design.
 
 
+
+  $(document).ready (function() {
+    resizableBox();
+    });
+    
 // When user submits site, height, and width, site displays in iframe.
 	  
 	function formSubmit() {
@@ -42,4 +47,14 @@
 		$(".multiScreen").attr("src", $("#murl").val());
     };
   
- 
+  
+// Resizable iframe
+    // Creating a resizable iframe only does not work. It must be in a div.
+  
+  function resizableBox() {
+  
+    $("#rescaleDiv").resizable({
+      alsoResize: '#rDisplay'
+    });
+
+    };

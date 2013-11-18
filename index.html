@@ -3,11 +3,13 @@
 <html>
   <head>
   <title>Screen Emulator</title>
-	<!--<link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui-1.10.3.custom/css/graytheme/jquery-ui-1.10.3.custom.css" />-->
+  
+  <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui-1.10.3.custom/css/graytheme/jquery-ui-1.10.3.custom.css" />
   <link rel="stylesheet" type="text/css" href="css/screen.css" />
 	<script type="text/javascript" src="js/jquery-1.10.2.js" /></script>
 	<script type="text/javascript" src="js/screen.js" /></script>
-	<!--<script src="jqueryui/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>-->
+	<script src="jqueryui/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+  
   </head>
   
   <body>
@@ -28,19 +30,20 @@
       <iframe id="displayPage" name="displayPage" >
       </iframe>
     </section>
-  
-  <!-- Under Development
+
     <section class="draggable">
-    <h1>Display a site in a draggable/rescalable/resizable frame</h1>
+    <h1>Display a site in a resizable frame</h1>
       <form id="resizableInput">
         <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
         <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
       </form>
-      
-      <iframe id="rDisplay" name="rDisplay" >
+     
+    <div id="rescaleDiv" class="ui-widget-content">
+      <iframe id="rDisplay" name="rDisplay" class="ui-widget-content">
       </iframe>
+    </div>
+     
     </section>
-  -->  
     
     <section class="presized">
     <h1>Display a site in phone, tablet, and desktop size</h1>
