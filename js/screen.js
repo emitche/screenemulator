@@ -42,4 +42,8 @@
 		$(".multiScreen").attr("src", $("#murl").val());
     };
   
+  
+  $("#rescale").resizable({
+      alsoResize : '#rDisplay'
+    });
  
