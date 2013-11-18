@@ -49,13 +49,7 @@
   
   
 // Resizable iframe
-
-/*  
-  $("#rescale").resizable({
-      alsoResize: '#rDisplay'
-    });
-*/
-
+    // Creating a resizable iframe only does not work. It must be in a div.
   
   function resizableBox() {
   
@@ -64,12 +58,3 @@
     });
 
     };
-    
-//  function resizableIframe () {
-  
-  
-/* 
-    $(function() {
-    $("#rescale").resizable();
-    });
-*/
