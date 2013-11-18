@@ -50,5 +50,15 @@
 */
 
 
-  $("#rescale").resizable();
+  $(document).ready (function() {
+  $("#rescaleDiv").resizable( {handles: "n, e, s, w"} );
+  alsoResize: '#rDisplay'
+  });
+  
+  
+/* 
+    $(function() {
+    $("#rescale").resizable();
+    });
+*/
  
