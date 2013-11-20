@@ -31,7 +31,7 @@ font-size: 100%;
 }
 
 input, button, iframe {
-margin: .75%;
+margin: .5%;
 }
 
 /* Size of url boxes */
@@ -46,7 +46,8 @@ width: 8em;
 }
 
 section {
-margin: 5% 1%;
+margin: 5% 0;
+padding: 1%;
 }
 
 iframe {
@@ -95,4 +96,8 @@ border: solid 2px rgba(76,150,193,1);
 nav a {
 text-decoration: none;
 color: inherit;
+}
+
+#userInput label {
+font-weight: bold;
 }
