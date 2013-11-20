@@ -101,3 +101,8 @@ color: inherit;
 #userInput label {
 font-weight: bold;
 }
+
+#displayPage {
+width: 500px;
+height: 300px;
+}
