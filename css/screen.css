@@ -99,7 +99,7 @@ color: inherit;
 }
 
 #specialButton {
-background-color: #ea3004;
+background-color: rgba(234,48,4,1);
 }
 
 #userInput label {
@@ -109,4 +109,8 @@ font-weight: bold;
 #displayPage {
 width: 500px;
 height: 300px;
+}
+
+a {
+color:  rgba(234,48,4,1);
 }
