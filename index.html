@@ -40,22 +40,29 @@
     
     <section class="basic" id="basic">
     <h1>Display a site with a specific screen size</h1>
+      
+      <p>Example: http://duckduckgo.com, 400, 200. (Units (px) are automatically added.)</p>
       <form id="userInput">
-        <label for="uurl">s:</label>
+        <i class="fa fa-external-link"></i>
+        <label for="uurl">site:</label>
         <input id="uurl" name="uurl" class="website" type="text" placeholder="Enter site url." />
-        <label for="displayWidth">w:</label>
+        <i class="fa fa-arrows-h"></i>
+        <label for="displayWidth">width:</label>
         <input id="dWidth" name="displayWidth" class="sizePar" type="text" placeholder="width in pixels" />
-        <label for="displayHeight">h:</label>
+        <i class="fa fa-arrows-v"></i>
+        <label for="displayHeight">height:</label>
         <input id="dHeight" name="displayHeight" class="sizePar" type="text" placeholder="height in pixels" />
         <input name="usubmit" type="button" onclick="formSubmit();" value="Update" />
       </form>
-        
+      
       <iframe id="displayPage" name="displayPage"></iframe>
+  
     </section>
 
     <section class="draggable" id="resizable">
     <h1>Display a site in a resizable frame</h1>
       <form id="resizableInput">
+        <i class="fa fa-external-link"></i>
         <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
         <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
       </form>
@@ -69,6 +76,7 @@
     <section class="presized" id="multiscreen">
     <h1>Display a site in phone, tablet, and desktop size</h1>
       <form id="multiInput">
+        <i class="fa fa-external-link"></i>
         <input id="murl" name="murl" class="website" type="text" placeholder="Enter site url." />
         <input name="msubmit" type="button" onclick="multiSubmit();" value="Update" />
       </form>
@@ -79,8 +87,6 @@
       
       <iframe id="mDisLar" name="mDisLar" class="multiScreen" width="1366px" height="768px"></iframe>
     </section>
-    
-    <i class="fa fa-arrows-alt"></i>
     
     <section id="about">
       <h1>About Screen Emulator</h1>

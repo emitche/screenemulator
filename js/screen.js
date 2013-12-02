@@ -7,25 +7,26 @@
   $(document).ready (function() {
     resizableBox();
     });
-    
+ 
+ 
 // When user submits site, height, and width, site displays in iframe.
 	  
 	function formSubmit() {
-	
+  
 		// Setting values from form/user to usable variables.
-		var $website = $("#uurl").val();
-		var $height = $("#dHeight").val() + "px";
-		var $width = $("#dWidth").val() + "px";
+      // var $website = $("#uurl").val();
+      // var $height = $("#dHeight").val() + "px";
+      // var $width = $("#dWidth").val() + "px";
 		
 		// Update the url.
 		$("#displayPage").attr("src", $("#uurl").val());
 		
 		// Update the width and height of the frame.
-		$("#displayPage").attr("width", $("#dWidth").val());
-		$("#displayPage").attr("height", $("#dHeight").val());
+		$("#displayPage").attr("width", $("#dWidth").val() + "px");
+		$("#displayPage").attr("height", $("#dHeight").val() + "px");
 		
 	};
-	
+
   
 // In a separate tab or page, when user adds site, it displays in a resizable iframe.
 
