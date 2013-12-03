@@ -43,16 +43,22 @@
       
       <p>Example: http://duckduckgo.com, 400, 200. (Units (px) are automatically added.)</p>
       <form id="userInput">
-        <i class="fa fa-external-link"></i>
-        <label for="uurl">site:</label>
-        <input id="uurl" name="uurl" class="website" type="text" placeholder="Enter site url." />
-        <i class="fa fa-arrows-h"></i>
-        <label for="displayWidth">width:</label>
-        <input id="dWidth" name="displayWidth" class="sizePar" type="text" placeholder="width in pixels" />
-        <i class="fa fa-arrows-v"></i>
-        <label for="displayHeight">height:</label>
-        <input id="dHeight" name="displayHeight" class="sizePar" type="text" placeholder="height in pixels" />
-        <input name="usubmit" type="button" onclick="formSubmit();" value="Update" />
+        <span class="inputs">
+          <i class="fa fa-external-link"></i>
+          <label for="uurl">site:</label>
+          <input id="uurl" name="uurl" class="website" type="text" placeholder="Enter site url." />
+        </span>
+        <span class="inputs">
+          <i class="fa fa-arrows-h"></i>
+          <label for="displayWidth">width:</label>
+          <input id="dWidth" name="displayWidth" class="sizePar" type="text" placeholder="width in pixels" />
+        </span>
+        <span class="inputs">
+          <i class="fa fa-arrows-v"></i>
+          <label for="displayHeight">height:</label>
+          <input id="dHeight" name="displayHeight" class="sizePar" type="text" placeholder="height in pixels" />
+        </span>
+          <input name="usubmit" type="button" onclick="formSubmit();" value="Update" />
       </form>
       
       <iframe id="displayPage" name="displayPage"></iframe>
