@@ -30,6 +30,11 @@ border: none;
 font-size: 100%;
 }
 
+span.inputs, input[type='button']  {
+display: inline-block;
+margin: 1% 0;
+}
+
 input, button, iframe {
 margin: .5%;
 }
@@ -81,9 +86,9 @@ padding: 0;
 
 nav ul li {
 background-color: rgba(76,150,193,1);
-display: inline;
+display: inline-block;
 padding: 1% 1% 1% 1%;
-margin: .25% .1% 0% .1%;
+margin: 1% .1% 1.5% .1%;
 border-radius: 4px;
 }
 
@@ -104,11 +109,6 @@ background-color: rgba(234,48,4,1);
 
 #userInput label {
 font-weight: bold;
-}
-
-#displayPage {
-width: 500px;
-height: 300px;
 }
 
 a {
