@@ -59,6 +59,3 @@
     });
 
     };
-    
-    
-// Hide sections of page based on active tab.
