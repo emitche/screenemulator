@@ -4,6 +4,8 @@
 
 
 
+// Prepare document.
+
   $(document).ready (function() {
     resizableBox();
     });
@@ -27,35 +29,30 @@
 		
 	};
 
-  
-// In a separate tab or page, when user adds site, it displays in a resizable iframe.
-
-  function resizableSubmit() {
-	
-		// Update the url.
-		$("#rDisplay").attr("src", $("#rurl").val());
-    };
-
     
-// In a separate tab or page, when a user adds site, 3 iframes all update of different screen sizes
-    // mobile
-    // tablet
-    // desktop
+// In a separate section, when a user adds site, 3 iframes all update of different set screen sizes.
 
   function multiSubmit() {
 
 		// Update the url.
 		$(".multiScreen").attr("src", $("#murl").val());
     };
-  
-  
-// Resizable iframe
-    // Creating a resizable iframe only does not work. It must be in a div.
+
+    
+// In a separate section, when user adds site, it displays in a resizable iframe.
+
+  function resizableSubmit() {
+	
+		// Update the url.
+		$("#rDisplay").attr("src", $("#rurl").val());
+    };
+ 
+ 
+// Create resizable iframe.
   
   function resizableBox() {
   
     $("#rescaleDiv").resizable({
       alsoResize: '#rDisplay'
     });
-
     };

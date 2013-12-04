@@ -8,8 +8,10 @@
   <meta name="keywords" content="responsive design, screen emulator, testing repsonsive designs" />
   <meta charset="UTF-8" />
   
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui-1.10.3.custom/css/graytheme/jquery-ui-1.10.3.custom.css" />
 	<link rel="stylesheet" type="text/css" href="css/screen.css" />
+  
 	
 	<script type="text/javascript" src="js/jquery-1.10.2.js" /></script>
 	<script type="text/javascript" src="js/screen.js" /></script>
@@ -31,8 +33,8 @@
       <nav>
         <ul>
         <li><a href="#basic">Specify Screen Size</a></li>
-        <li><a href="#resizable">Resizable Frame</a></li>
         <li><a href="#multiscreen">Multiple Screens</a></li>
+        <li><a href="#resizable">Resizable Frame</a></li>
         <li id="specialButton"><a href="#about">About This Project</a></li>
         </ul>
       </nav>
@@ -42,6 +44,7 @@
     <h1>Display a site with a specific screen size</h1>
       
       <p>Example: http://duckduckgo.com, 400, 200. (Units (px) are automatically added.)</p>
+      
       <form id="userInput">
         <span class="inputs">
           <i class="fa fa-external-link"></i>
@@ -64,20 +67,6 @@
       <iframe id="displayPage" name="displayPage"></iframe>
   
     </section>
-
-    <section class="draggable" id="resizable">
-    <h1>Display a site in a resizable frame</h1>
-      <form id="resizableInput">
-        <i class="fa fa-external-link"></i>
-        <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
-        <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
-      </form>
-     
-    <div id="rescaleDiv" class="ui-widget-content">
-      <iframe id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
-    </div>
-     
-    </section>
     
     <section class="presized" id="multiscreen">
     <h1>Display a site in phone, tablet, and desktop size</h1>
@@ -92,6 +81,23 @@
       <iframe id="mDisMed" name="mDisMed" class="multiScreen" width="800px" height="1280px"></iframe>
       
       <iframe id="mDisLar" name="mDisLar" class="multiScreen" width="1366px" height="768px"></iframe>
+    </section>
+    
+    <section class="draggable" id="resizable">
+    <h1>Display a site in a resizable frame</h1>
+    
+      <p>This feature is not optimized for touch experiences.</p>
+      
+      <form id="resizableInput">
+        <i class="fa fa-external-link"></i>
+        <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
+        <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
+      </form>
+     
+    <div id="rescaleDiv" class="ui-widget-content">
+      <iframe id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
+    </div>
+     
     </section>
     
     <section id="about">
