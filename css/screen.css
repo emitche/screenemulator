@@ -114,3 +114,16 @@ font-weight: bold;
 a {
 color:  rgba(234,48,4,1);
 }
+
+/* Address lack of touch functionality for resizable tool */
+
+  @media (max-width: 800px) {
+   
+    #resizableInput {
+    display: none;
+    }
+  
+    #rescaleDiv {
+    display: none;
+    }
+  }
