@@ -83,7 +83,7 @@
   
     button, input[type='button'], input[type='submit'] {
     background-color: rgba(76,150,193,1);
-    padding: .5%;
+    padding: 1%;
     color: white;
     font-weight: bold;
     border-radius: 5px;
@@ -109,7 +109,7 @@
 
     /* Size of parameter boxes*/
     .sizePar {
-    width: 8em;
+    width: 10em;
     }
     
     /* Inputs for Specify Screen Size Tool */
@@ -121,7 +121,10 @@
     #userInput label {
     font-weight: bold;
     }
-
+    
+    #userInput input[type='text'] {
+    padding: 2%;
+    }
 
   /* Iframe for resizable tool */
   
