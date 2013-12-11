@@ -126,26 +126,24 @@
     padding: 2%;
     }
 
-  /* Form Factors */
+  /* Iframe for resizable tool */
   
-  /* 
-    #mDisSm, #mDisMed, #mDisLar {
-    transform: scale(.5);
+    #rDisplay {
+    width: 98%;
+    padding: 5px 5px;
     }
-  */
-  
-  /* Resource List */
 
-  dl, dd, dt {
-  margin: 0;
-  padding: 0;
-  }
   
-  dt {
-  font-weight: bold;
-  }
   
-  dd {
-  padding: 0 0 1% 0;
-  }
+/* Address lack of touch functionality for resizable tool */
+
+  @media (max-width: 800px) {
+   
+    #resizableInput {
+    display: none;
+    }
   
+    #rescaleDiv {
+    display: none;
+    }
+  }
