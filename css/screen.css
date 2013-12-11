@@ -125,25 +125,3 @@
     #userInput input[type='text'] {
     padding: 2%;
     }
-
-  /* Iframe for resizable tool */
-  
-    #rDisplay {
-    width: 98%;
-    padding: 5px 5px;
-    }
-
-  
-  
-/* Address lack of touch functionality for resizable tool */
-
-  @media (max-width: 800px) {
-   
-    #resizableInput {
-    display: none;
-    }
-  
-    #rescaleDiv {
-    display: none;
-    }
-  }
