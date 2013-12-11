@@ -21,7 +21,7 @@ The 2.x version of the app includes 3 responsive tools:
   
 The most recent version, 3.x, removes the resizeable frame, as that feature was not compatible with touch experiences and to make the app lighter in weight by removing the jQuery UI dependency. 
 
-I am also considering resizing the mobile, tablet, and desktop views so that they fit inside whatever browser they are being viewed from (phone, tablet, laptp, etc.) This is a feature under consideration and development.
+I am also considering resizing the mobile, tablet, and desktop views so that they fit inside whatever browser they are being viewed from (phone, tablet, laptop, etc.) This is a feature under consideration and development.
 
 Author:
 -------
