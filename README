@@ -2,7 +2,7 @@ Screen Emulator
 
 Purpose: 
 --------
-This is a screen emulator. It may be useful for web developers who need to test screen sizes not accessible to them with their current screen size, specifically when considering responsive design. 
+This is a screen emulator and responsive design tool. It may be useful for web developers who need to test screen sizes.
 
 Where:
 ------
@@ -12,3 +12,17 @@ Info:
 -----
 This app is currently under development.
 
+Notes:
+------
+The 2.x version of the app includes 3 responsive tools:
+  1) Specifying height and width
+  2) Resizeable iframe utilizing jQuery UI (similar to changing the physical size of your browser by dragging the side)
+  3) Mobile, tablet, and desktop views to-scale (at least when viewed on a laptop/desktop)
+  
+The most recent version, 3.x, removes the resizeable frame, as that feature was not compatible with touch experiences and to make the app lighter in weight by removing the jQuery UI dependency. 
+
+I am also considering resizing the mobile, tablet, and desktop views so that they fit inside whatever browser they are being viewed from (phone, tablet, laptp, etc.) This is a feature under consideration and development.
+
+Author:
+-------
+Elizabeth Mitchell
