@@ -133,3 +133,19 @@
     transform: scale(.5);
     }
   */
+  
+  /* Resource List */
+
+  dl, dd, dt {
+  margin: 0;
+  padding: 0;
+  }
+  
+  dt {
+  font-weight: bold;
+  }
+  
+  dd {
+  padding: 0 0 1% 0;
+  }
+  
