@@ -125,3 +125,11 @@
     #userInput input[type='text'] {
     padding: 2%;
     }
+
+  /* Form Factors */
+  
+  /* 
+    #mDisSm, #mDisMed, #mDisLar {
+    transform: scale(.5);
+    }
+  */
