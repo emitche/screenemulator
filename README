@@ -15,7 +15,7 @@ This app is currently under development.
 Notes:
 ------
 The app includes 3 responsive tools:
-  1) Resizeable iframe utilizing jQuery UI (similar to changing the physical size of your browser by dragging the side)
+  1) Resizable iframe utilizing jQuery UI (similar to changing the physical size of your browser by dragging the side)
   2) Mobile, tablet, and desktop views to-scale (when viewed on a laptop/desktop)
   3) Specify height and width
 
