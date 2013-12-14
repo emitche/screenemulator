@@ -32,31 +32,13 @@
       
       <nav>
         <ul>
-          <li><a href="#resizable">Resizable Frame</a></li>
           <li><a href="#multiscreen">Multiple Screens</a></li>
+          <li><a href="#resizable">Resizable Frame</a></li>
           <li><a href="#basic">Specify Screen Size</a></li>
           <li id="specialButton"><a href="#about">About This Project</a></li>
         </ul>
       </nav>
     </header>
-    
-    <section class="draggable" id="resizable">
-    
-      <h1>Display a site in a resizable frame</h1>
-    
-      <p>This feature is not optimized for touch experiences.</p>
-      
-      <form id="resizableInput">
-        <i class="fa fa-external-link"></i>
-        <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
-        <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
-      </form>
-     
-      <div id="rescaleDiv" class="ui-widget-content">
-        <iframe id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
-      </div>
-    
-    </section>
     
     <section class="presized" id="multiscreen">
     
@@ -76,6 +58,24 @@
       
     </section>
     
+    <section class="draggable" id="resizable">
+    
+      <h1>Display a site in a resizable frame</h1>
+    
+      <p>This feature is not optimized for touch experiences.</p>
+      
+      <form id="resizableInput">
+        <i class="fa fa-external-link"></i>
+        <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
+        <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
+      </form>
+     
+      <div id="rescaleDiv" class="ui-widget-content">
+        <iframe id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
+      </div>
+    
+    </section>
+      
     <section class="basic" id="basic">
     
       <h1>Display a site with a specific screen size</h1>
