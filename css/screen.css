@@ -147,34 +147,6 @@
         }
       }
   
-  /* Form Factors */
-
-/*  
-  @media screen and (max-width:700px) {
-    #mDisSm, #mDisMed, #mDisLar {
-    transform: scale(.25);
-    position: relative;
-    left: 0px;
-    }
-    
-    #mDisSm {
-    transform: scale(.5);
-    }
-    
-    #mDisMed {
-    transform: scale(.25);
-    }
-    
-    #mDisLar {
-    transform: scale(.1);
-    }
-    
-    section.presized {
-      padding-bottom: 30%;
-    }
-  }
-*/
-  
   /* Resource List */
 
     dl, dd, dt {
