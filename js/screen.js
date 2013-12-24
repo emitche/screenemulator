@@ -8,6 +8,7 @@
 
   $(document).ready (function() {
     resizableBox();
+    overrideEnter();
     });
  
  
@@ -29,7 +30,6 @@
 		
 	};
 
-    
 // In a separate section, when a user adds site, 3 iframes all update of different set screen sizes.
 
   function multiSubmit() {
@@ -56,3 +56,25 @@
       alsoResize: '#rDisplay'
     });
     };
+    
+    
+ // Handle enter key.
+ 
+  // If enter is pushed, override default behavior.
+  
+  function overrideEnter() {
+    
+    $("input[type='text']").on('keypress', function(e) {
+    if (e.which == 13) {
+      e.preventDefault();
+    }
+   });
+  };
+  
+  // If enter is pushed, perform function that would be done when pushing update buttons.
+  
+  // When in __ text input, when enter is pressed (13), perform respective function.
+  
+    // $(#murl).keypress(function() {
+    //    multisubmit();
+    //    });
