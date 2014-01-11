@@ -93,10 +93,9 @@
    });
   };
   
-  // If enter is pushed, perform function that would be done when pushing update buttons.
+  // When enter is pushed in a textbox, perform the respective function.
   
-  // When in __ text input, when enter is pressed (13), perform respective function.
-  
-    // $(#murl).keypress(function() {
-    //    multisubmit();
-    //    });
+    // Use a loop.
+    
+      // Loop may access the id of the form and use the respective function form submit.
+      
