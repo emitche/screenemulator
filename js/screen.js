@@ -7,45 +7,65 @@
 // Prepare document.
 
   $(document).ready (function() {
+        
     resizableBox();
     overrideEnter();
+    
+//    test();
+    
+  });
+  
+  
+  function test() {
+  
+    var $h1 = $("h1");
+    
+    $h1.mouseenter(function() {
+      $(this).css ({
+        'color': 'yellow'
+      });
     });
- 
- 
+  };
+    
 // When user submits site, height, and width, site displays in iframe.
 	  
 	function formSubmit() {
-  
-		// Setting values from form/user to usable variables.
-      // var $website = $("#uurl").val();
-      // var $height = $("#dHeight").val() + "px";
-      // var $width = $("#dWidth").val() + "px";
 		
+    var $uurl = $("#uurl").val();
+    var $uwidth = $("#dWidth").val() + "px";
+    var $uheight = $("#dHeight") + "px";
+    
 		// Update the url.
-		$("#displayPage").attr("src", $("#uurl").val());
+		$("#displayPage").attr("src", $uurl);
 		
 		// Update the width and height of the frame.
-		$("#displayPage").attr("width", $("#dWidth").val() + "px");
-		$("#displayPage").attr("height", $("#dHeight").val() + "px");
+		$("#displayPage").attr("width", $uwidth);
+		$("#displayPage").attr("height", $uheight);
 		
 	};
 
 // In a separate section, when a user adds site, 3 iframes all update of different set screen sizes.
 
   function multiSubmit() {
+  
+    var $murl = $("#murl").val();
 
 		// Update the url.
-		$(".multiScreen").attr("src", $("#murl").val());
-    };
+		$(".multiScreen").attr("src", $murl);
+  
+  };
 
     
 // In a separate section, when user adds site, it displays in a resizable iframe.
 
   function resizableSubmit() {
+  
+    var $rurl = $("#rurl").val();
 	
 		// Update the url.
-		$("#rDisplay").attr("src", $("#rurl").val());
-    };
+		$("#rDisplay").attr("src", $rurl);
+  
+  };
  
  
 // Create resizable iframe.
@@ -63,8 +83,10 @@
   // If enter is pushed, override default behavior.
   
   function overrideEnter() {
+  
+    var $textBox = $("input[type='text']");
     
-    $("input[type='text']").on('keypress', function(e) {
+    $textBox.on('keypress', function(e) {
     if (e.which == 13) {
       e.preventDefault();
     }
