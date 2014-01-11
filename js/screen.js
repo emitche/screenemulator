@@ -29,7 +29,7 @@
     
 // When user submits site, height, and width, site displays in iframe.
 	  
-	function formSubmit() {
+	function userSubmit() {
 		
     var $uurl = $("#uurl").val();
     var $uwidth = $("#dWidth").val() + "px";
