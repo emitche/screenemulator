@@ -78,7 +78,7 @@
     };
     
     
- // Handle enter key.
+// Handle enter key.
  
   // If enter is pushed, override default behavior.
   
@@ -93,9 +93,19 @@
    });
   };
   
+  
   // When enter is pushed in a textbox, perform the respective function.
   
-    // Use a loop.
-    
+    // The DRY option:
+      // Use a loop.
       // Loop may access the id of the form and use the respective function form submit.
       
+    // The lengthier, easier option:
+      // Spell out what should happen for each.
+      
+      // If text box id gets murl, multiSubmit()
+      // If text box id gets rurl, resizableSumit()
+      
+      // If text box class gets uInput, userSubmit()
+    
+    
