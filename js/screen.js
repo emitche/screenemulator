@@ -104,8 +104,16 @@
       // Spell out what should happen for each.
       
       // If text box id gets murl, multiSubmit()
+      
+    #murl.multiSubmit();
+    
+      
       // If text box id gets rurl, resizableSumit()
       
       // If text box class gets uInput, userSubmit()
     
+    
+      input[class='uInput'].
+      
+      input[id^='u'].
     
