@@ -12,6 +12,8 @@
   body {
   font-size: 100%;
   background-color: #eef2f3;
+  background-color: rgba(238, 242, 243, 1);
+  background-color: rgba(235, 235, 235, 1);
   font-family: Verdana, Arial, sans-serif;
   padding: 1%;
   }
