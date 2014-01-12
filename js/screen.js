@@ -30,10 +30,27 @@
    var $input = $("input");
     
     $textBox.focusout(function() {
+    
+    // Working test.
+
+/*    $(this).css ({
+        'background-color': 'orange'
+      });
+*/
       
-    $(this).css ({
-      'background-color': 'orange'
-     });
+      // Responding test, but does not work as desired. All text boxes are turning green. :) 
+      
+      if ($textBox.attr("id") == "murl") {
+//      if ($textBox.attr("id", "murl")) {  // Also, not working.
+       $(this).css ({
+            'background-color': 'green'
+          });
+      }
+      else {
+        $(this).css ({
+            'background-color': 'yellow'
+          });
+      }
 
     });
 
