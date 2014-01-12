@@ -7,8 +7,13 @@
 // Prepare document.
 
   $(document).ready (function() {
-        
+     
     resizableBox();
+        
+    userSubmit();
+    multiSubmit();
+    resizableSubmit();
+
     overrideEnter();
     
 //    test();
@@ -85,127 +90,26 @@
   
   function overrideEnter() {
   
-    var $textBox = $("input[type='text']");
-    
-    var $identify = ;
-    
+    var $textBox = $("input[type='text']");    
     
     $textBox.on('keypress', function(e) {
       if (e.which == 13) {
       
         e.preventDefault();
 
-        if (this.is('#murl')) {
+        if ($textBox.attr("id") == "murl") {
           multisubmit();
         }
           
-        else if (this.is('#rurl')) {
+        else if (this.attr("id") == "rurl") {
           resizeSubmit();
         }
           
-        else if (this.is('.uInput')){
+        else if (this.attr("class") == "uInput"){
           userSubmit();
         }
-/*     
-        if $(id == 'murl') {
-          multisubmit();
-          }
-          
-        else if (id == 'rurl') {
-          resizeSubmit();
-          }
-          
-        else {
-          userSubmit();
-          }
-*/
-
-/*
-        [id="murl"]
-        [id="rurl"]
-        [class^="uInput"]
         
-        if (id == 'murl') {
-          multisubmit();
-          }
-          
-        else if (id == 'rurl') {
-          resizeSubmit();
-          }
-          
-        else {
-          userSubmit();
-          }
-        
-*/
       }
     });
-    
-    // Test (pass) that using blur will update iframe.
-   
-/*    $textBox.on('blur', function() {
-      resizeSubmit();
-      userSubmit();
-    });
-*/    
    
   };
-  
-/* 
-  function overrideEnter() {
-  
-    var $textBox = $("input[type='text']");
-    
-    $textBox.on('keypress', function(e) {
-    if (e.which == 13) {
-      e.preventDefault();
-      
-      if (input[class] === 'uInput') {
-          
-      else if (input[id] === 'murl') {
-         multiSubmit();
-      }
-      else if (input[id] === 
-      return false;
-    }
-   });
-  };
-*/
-
-/* 
-     $("input").bind("keydown", function(event) {
-      // track enter key
-      var keycode = (event.keyCode ? event.keyCode : (event.which ? event.which : event.charCode));
-      if (keycode == 13) { // keycode for enter key
-         // force the 'Enter Key' to implicitly click the Update button
-         document.getElementById('defaultActionButton').click();
-         return false;
-      } else  {
-         return true;
-      }
-   }); // end of function
-*/
-  
-  // When enter is pushed in a textbox, perform the respective function.
-  
-    // The DRY option:
-      // Use a loop.
-      // Loop may access the id of the form and use the respective function form submit.
-      
-    // The lengthier, easier option:
-      // Spell out what should happen for each.
-      
-      // If text box id gets murl, multiSubmit()
-      
-   // #murl.multiSubmit();
-    
-      
-      // If text box id gets rurl, resizableSumit()
-      
-      // If text box class gets uInput, userSubmit()
-    
-    
-   //   input[class='uInput'].
-      
-   //   input[id^='u'].
-    
