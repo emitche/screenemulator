@@ -1,3 +1,19 @@
+      if (z.attr("id") == "murl") {
+//      if ($textBox.attr("id", "murl")) {  // Also, not working.
+       $(this).css ({
+            'background-color': 'green'
+          });
+      }
+      else {
+        $(this).css ({
+            'background-color': 'yellow'
+          });
+      }
+
+    });
+
+
+
   function test() {
  
     var $h1 = $("h1");
