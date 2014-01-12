@@ -9,10 +9,6 @@
   $(document).ready (function() {
      
     resizableBox();
-        
-    userSubmit();
-    multiSubmit();
-    resizableSubmit();
 
     overrideEnter();
     
@@ -20,17 +16,6 @@
     
   });
   
-  
-  function test() {
-  
-    var $h1 = $("h1");
-    
-    $h1.mouseenter(function() {
-      $(this).css ({
-        'color': 'yellow'
-      });
-    });
-  };
     
 // When user submits site, height, and width, site displays in iframe.
 	  
@@ -51,6 +36,7 @@
 	};
 
 // In a separate section, when a user adds site, 3 iframes all update of different set screen sizes.
+
 
   function multiSubmit() {
   
@@ -94,51 +80,7 @@
     
     $textBox.on('keypress', function(e) {
       if (e.which == 13) {
-      
         e.preventDefault();
-
-        if ($("input").attr("id") == "murl") {
-          multisubmit();
-          console.log("You are closer to your goal.");
-          return true;
-        }
-          
-        else if ($("input").attr("id") == "rurl") {
-          resizeSubmit();
-          console.log("You are closer to your goal.");
-          return true;
-        }
-          
-        else if ($("input").attr("class") == "uInput"){
-          userSubmit();
-          console.log("You are closer to your goal.");
-          return true;
-        }
-        
-        else {
-          console.log("Something isn't right.");
-          return false;
-        }
       }
-    
     });
-   
   };
-  
-/*
-  
-  function multiEnter() {
-  
-   $(this).css({
-    'color' : 'blue'
-    });
-    
-   var $textBox = $("#murl");    
-    
-    $textBox.on('keypress', function(e) {
-      if (e.which == 13) {
-      $textBox.multiSubmit();
-      }
-    };
-  };
-*/
