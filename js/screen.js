@@ -16,6 +16,28 @@
     
   });
   
+  function test() {
+ 
+    var $h1 = $("h1");
+    
+    $h1.mouseenter(function() {
+      $(this).css ({
+        'color': 'yellow'
+      });
+    });
+
+   var $textBox = $("input[type='text']");
+   var $input = $("input");
+    
+    $textBox.focusout(function() {
+      
+    $(this).css ({
+      'background-color': 'orange'
+     });
+
+    });
+
+  };
     
 // When user submits site, height, and width, site displays in iframe.
 	  
