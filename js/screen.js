@@ -87,15 +87,91 @@
   
     var $textBox = $("input[type='text']");
     
+    var $identify = ;
+    
+    
+    $textBox.on('keypress', function(e) {
+      if (e.which == 13) {
+      
+        e.preventDefault();
+
+        if (this.is('#murl')) {
+          multisubmit();
+        }
+          
+        else if (this.is('#rurl')) {
+          resizeSubmit();
+        }
+          
+        else if (this.is('.uInput')){
+          userSubmit();
+        }
+/*     
+        if $(id == 'murl') {
+          multisubmit();
+          }
+          
+        else if (id == 'rurl') {
+          resizeSubmit();
+          }
+          
+        else {
+          userSubmit();
+          }
+*/
+
+/*
+        [id="murl"]
+        [id="rurl"]
+        [class^="uInput"]
+        
+        if (id == 'murl') {
+          multisubmit();
+          }
+          
+        else if (id == 'rurl') {
+          resizeSubmit();
+          }
+          
+        else {
+          userSubmit();
+          }
+        
+*/
+      }
+    });
+    
+    // Test (pass) that using blur will update iframe.
+   
+/*    $textBox.on('blur', function() {
+      resizeSubmit();
+      userSubmit();
+    });
+*/    
+   
+  };
+  
+/* 
+  function overrideEnter() {
+  
+    var $textBox = $("input[type='text']");
+    
     $textBox.on('keypress', function(e) {
     if (e.which == 13) {
       e.preventDefault();
-      multiSubmit();
+      
+      if (input[class] === 'uInput') {
+          
+      else if (input[id] === 'murl') {
+         multiSubmit();
+      }
+      else if (input[id] === 
       return false;
     }
    });
   };
-  
+*/
+
 /* 
      $("input").bind("keydown", function(event) {
       // track enter key
