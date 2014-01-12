@@ -32,15 +32,16 @@
 	function userSubmit() {
 		
     var $uurl = $("#uurl").val();
+    
     var $uwidth = $("#dWidth").val() + "px";
-    var $uheight = $("#dHeight") + "px";
+    var $uheight = $("#dHeight").val() + "px";
     
 		// Update the url.
 		$("#displayPage").attr("src", $uurl);
 		
 		// Update the width and height of the frame.
-		$("#displayPage").attr("width", $uwidth);
-		$("#displayPage").attr("height", $uheight);
+		$("#displayPage").attr("width", ($("#dWidth").val() + "px"));
+		$("#displayPage").attr("height", ($("#dHeight").val() + "px"));
 		
 	};
 
@@ -89,10 +90,25 @@
     $textBox.on('keypress', function(e) {
     if (e.which == 13) {
       e.preventDefault();
+      multiSubmit();
+      return false;
     }
    });
   };
   
+/* 
+     $("input").bind("keydown", function(event) {
+      // track enter key
+      var keycode = (event.keyCode ? event.keyCode : (event.which ? event.which : event.charCode));
+      if (keycode == 13) { // keycode for enter key
+         // force the 'Enter Key' to implicitly click the Update button
+         document.getElementById('defaultActionButton').click();
+         return false;
+      } else  {
+         return true;
+      }
+   }); // end of function
+*/
   
   // When enter is pushed in a textbox, perform the respective function.
   
@@ -105,7 +121,7 @@
       
       // If text box id gets murl, multiSubmit()
       
-    #murl.multiSubmit();
+   // #murl.multiSubmit();
     
       
       // If text box id gets rurl, resizableSumit()
@@ -113,7 +129,7 @@
       // If text box class gets uInput, userSubmit()
     
     
-      input[class='uInput'].
+   //   input[class='uInput'].
       
-      input[id^='u'].
+   //   input[id^='u'].
     
