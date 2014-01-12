@@ -16,7 +16,7 @@
 
     overrideEnter();
     
-//    test();
+    test();
     
   });
   
@@ -97,19 +97,19 @@
       
         e.preventDefault();
 
-        if ($textBox.attr("id") == "murl") {
+        if ($("input").attr("id") == "murl") {
           multisubmit();
           console.log("You are closer to your goal.");
           return true;
         }
           
-        else if (this.attr("id") == "rurl") {
+        else if ($("input").attr("id") == "rurl") {
           resizeSubmit();
           console.log("You are closer to your goal.");
           return true;
         }
           
-        else if (this.attr("class") == "uInput"){
+        else if ($("input").attr("class") == "uInput"){
           userSubmit();
           console.log("You are closer to your goal.");
           return true;
@@ -124,3 +124,21 @@
     });
    
   };
+  
+/*
+  
+  function multiEnter() {
+  
+   $(this).css({
+    'color' : 'blue'
+    });
+    
+   var $textBox = $("#murl");    
+    
+    $textBox.on('keypress', function(e) {
+      if (e.which == 13) {
+      $textBox.multiSubmit();
+      }
+    };
+  };
+*/
