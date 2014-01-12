@@ -99,17 +99,28 @@
 
         if ($textBox.attr("id") == "murl") {
           multisubmit();
+          console.log("You are closer to your goal.");
+          return true;
         }
           
         else if (this.attr("id") == "rurl") {
           resizeSubmit();
+          console.log("You are closer to your goal.");
+          return true;
         }
           
         else if (this.attr("class") == "uInput"){
           userSubmit();
+          console.log("You are closer to your goal.");
+          return true;
         }
         
+        else {
+          console.log("Something isn't right.");
+          return false;
+        }
       }
+    
     });
    
   };
