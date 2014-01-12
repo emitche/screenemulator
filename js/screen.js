@@ -40,8 +40,8 @@
 		$("#displayPage").attr("src", $uurl);
 		
 		// Update the width and height of the frame.
-		$("#displayPage").attr("width", ($("#dWidth").val() + "px"));
-		$("#displayPage").attr("height", ($("#dHeight").val() + "px"));
+		$("#displayPage").attr("width", $uwidth);
+		$("#displayPage").attr("height", $uheight);
 		
 	};
 
