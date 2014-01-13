@@ -73,12 +73,14 @@
   border: none;
   border: solid black 1px;
   padding: .25%;
+  padding: 1px;
   border-radius: 2px;
   display: block;
   }
   
   input, button, iframe {
   margin: .5%;
+  margin: 2px;
   }
   
   /* Buttons */
@@ -192,3 +194,24 @@
     padding: 0 0 1% 0;
     }
   
+  
+  /* Resize Iframes */
+  
+/*
+#mDisSm {
+  height: ;
+  width: ;
+  sca
+*/
+
+
+.wrap {width: 400px; height:300px; padding: 0; overflow: hidden;}
+.frame {border: 1px solid black; width: 1366px; height: 768px;}
+.frame {
+    -moz-transform: scale(0.25);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.25);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: 0 0;
+}

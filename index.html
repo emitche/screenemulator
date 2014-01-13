@@ -42,7 +42,7 @@
       </nav>
     </header>
     
-    <section class="presized" id="multiscreen">
+    <section class="presized" id="multiscreen" position="relative";>
     
       <h1>Display a site in phone, tablet, and desktop size</h1>
      
@@ -52,11 +52,17 @@
         <input name="msubmit" type="button" onclick="multiSubmit();" value="Update" />
       </form>
       
-      <iframe id="mDisSm" name="mDisSm" class="multiScreen" width="320px" height="400px"></iframe>
+      <div class="wrap">
+      <iframe class="multiScreen frame" width="1366px" height="768px"></iframe>
+      </div>
+ 
+<!-- 
+      <iframe id="mDisSm" name="mDisSm" class="multiScreen" width="320px" height="400px" security="restricted"></iframe>
       
-      <iframe id="mDisMed" name="mDisMed" class="multiScreen" width="800px" height="1280px"></iframe>
+      <iframe id="mDisMed" name="mDisMed" class="multiScreen" width="800px" height="1280px" security="restricted"></iframe>
       
-      <iframe id="mDisLar" name="mDisLar" class="multiScreen" width="1366px" height="768px"></iframe>
+      <iframe id="mDisLar" name="mDisLar" class="multiScreen" width="1366px" height="768px" security="restricted"></iframe>
+-->      
       
     </section>
     
