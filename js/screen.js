@@ -1,7 +1,7 @@
 ﻿// Screen Emulator
+// Author: Elizabeth Mitchell
 
 // Purpose: This is a screen emulator. It may be useful for web developers who need to test screen sizes not accessible to them with their current screen size, specifically when considering responsive design.
-
 
 
 // Prepare document.
@@ -9,53 +9,11 @@
   $(document).ready (function() {
      
     resizableBox();
-
-    overrideEnter();
     
-//    test();
+    overrideEnter();
     
   });
   
-  function test() {
- 
-    var $h1 = $("h1");
-    
-    $h1.mouseenter(function() {
-      $(this).css ({
-        'color': 'yellow'
-      });
-    });
-
-   var $textBox = $("input[type='text']");
-   var $input = $("input");
-    
-    $textBox.focusout(function() {
-    
-    // Working test.
-
-/*    $(this).css ({
-        'background-color': 'orange'
-      });
-*/
-      
-      // Responding test, but does not work as desired. All text boxes are turning green. :) 
-      
-      if ($textBox.attr("id") == "murl") {
-//      if ($textBox.attr("id", "murl")) {  // Also, not working.
-       $(this).css ({
-            'background-color': 'green'
-          });
-      }
-      else {
-        $(this).css ({
-            'background-color': 'yellow'
-          });
-      }
-
-    });
-
-  };
-    
 // When user submits site, height, and width, site displays in iframe.
 	  
 	function userSubmit() {
