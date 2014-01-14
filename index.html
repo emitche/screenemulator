@@ -42,7 +42,7 @@
       </nav>
     </header>
     
-    <section class="presized" id="multiscreen">
+    <section class="presized" id="multiscreen" position="relative";>
     
       <h1>Display a site in phone, tablet, and desktop size</h1>
      
@@ -52,11 +52,17 @@
         <input name="msubmit" type="button" onclick="multiSubmit();" value="Update" />
       </form>
       
-      <iframe id="mDisSm" name="mDisSm" class="multiScreen" width="320px" height="400px"></iframe>
+      <div class="wrap" id="wDisSm">   
+        <iframe id="mDisSm" name="mDisSm" class="multiScreen frame" security="restricted"></iframe>
+      </div>
       
-      <iframe id="mDisMed" name="mDisMed" class="multiScreen" width="800px" height="1280px"></iframe>
+      <div class="wrap" id="wDisMed">   
+        <iframe id="mDisMed" name="mDisMed" class="multiScreen frame" security="restricted"></iframe>
+      </div>
       
-      <iframe id="mDisLar" name="mDisLar" class="multiScreen" width="1366px" height="768px"></iframe>
+      <div class="wrap" id="wDisLar"> 
+        <iframe id="mDisLar" name="mDisLar" class="multiScreen frame" security="restricted"></iframe>
+      </div>
       
     </section>
     
@@ -88,20 +94,20 @@
         <span class="inputs">
           <i class="fa fa-external-link"></i>
           <label for="uurl">site:</label>
-          <input id="uurl" name="uurl" class="website" type="text" placeholder="Enter site url." />
+          <input id="uurl" name="uurl" class="website uInput" type="text" placeholder="Enter site url." />
         </span>
         <span class="inputs">
           <i class="fa fa-arrows-h"></i>
           <label for="displayWidth">width:</label>
-          <input id="dWidth" name="displayWidth" class="sizePar" type="text" placeholder="width in pixels" />
+          <input id="dWidth" name="displayWidth" class="sizePar uInput" type="text" placeholder="width in pixels" />
         </span>
         <span class="inputs">
           <i class="fa fa-arrows-v"></i>
           <label for="displayHeight">height:</label>
-          <input id="dHeight" name="displayHeight" class="sizePar" type="text" placeholder="height in pixels" />
+          <input id="dHeight" name="displayHeight" class="sizePar uInput" type="text" placeholder="height in pixels" />
         </span>
          
-        <input name="usubmit" type="button" onclick="formSubmit();" value="Update" />
+        <input name="usubmit" type="button" onclick="userSubmit();" value="Update" />
       </form>
       
       <iframe id="displayPage" name="displayPage"></iframe>
