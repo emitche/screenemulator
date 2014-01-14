@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
   <head>
@@ -41,79 +41,7 @@
         </ul>
       </nav>
     </header>
-    
-    <section class="presized" id="multiscreen" position="relative";>
-    
-      <h1>Display a site in phone, tablet, and desktop size</h1>
      
-      <form id="multiInput">
-        <i class="fa fa-external-link"></i>
-        <input id="murl" name="murl" class="website" type="text" placeholder="Enter site url." />
-        <input name="msubmit" type="button" onclick="multiSubmit();" value="Update" />
-      </form>
-      
-      <div class="wrap" id="wDisSm">   
-        <iframe id="mDisSm" name="mDisSm" class="multiScreen frame" security="restricted"></iframe>
-      </div>
-      
-      <div class="wrap" id="wDisMed">   
-        <iframe id="mDisMed" name="mDisMed" class="multiScreen frame" security="restricted"></iframe>
-      </div>
-      
-      <div class="wrap" id="wDisLar"> 
-        <iframe id="mDisLar" name="mDisLar" class="multiScreen frame" security="restricted"></iframe>
-      </div>
-      
-    </section>
-    
-    <section class="draggable" id="resizable">
-    
-      <h1>Display a site in a resizable frame</h1>
-    
-      <p>This feature is not optimized for touch experiences.</p>
-      
-      <form id="resizableInput">
-        <i class="fa fa-external-link"></i>
-        <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
-        <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
-      </form>
-     
-      <div id="rescaleDiv" class="ui-widget-content">
-        <iframe id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
-      </div>
-    
-    </section>
-      
-    <section class="basic" id="basic">
-    
-      <h1>Display a site with a specific screen size</h1>
-      
-      <p>Example: http://duckduckgo.com, 400, 200. (Units (px) are automatically added.)</p>
-      
-      <form id="userInput">
-        <span class="inputs">
-          <i class="fa fa-external-link"></i>
-          <label for="uurl">site:</label>
-          <input id="uurl" name="uurl" class="website uInput" type="text" placeholder="Enter site url." />
-        </span>
-        <span class="inputs">
-          <i class="fa fa-arrows-h"></i>
-          <label for="displayWidth">width:</label>
-          <input id="dWidth" name="displayWidth" class="sizePar uInput" type="text" placeholder="width in pixels" />
-        </span>
-        <span class="inputs">
-          <i class="fa fa-arrows-v"></i>
-          <label for="displayHeight">height:</label>
-          <input id="dHeight" name="displayHeight" class="sizePar uInput" type="text" placeholder="height in pixels" />
-        </span>
-         
-        <input name="usubmit" type="button" onclick="userSubmit();" value="Update" />
-      </form>
-      
-      <iframe id="displayPage" name="displayPage"></iframe>
-  
-    </section> 
-    
     <section id="about">
       <h1>About Screen Emulator</h1>
       
