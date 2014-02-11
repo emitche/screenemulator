@@ -26,7 +26,7 @@
   <body>
 	
     <header>
-      <h1>Screen Emulator</h1>
+      <h1><a href="index.html">Screen Emulator</a></h1>
       
       <p>A tool for web developers and designers to view sites on different screen sizes in one place.</p>
       
@@ -37,7 +37,7 @@
           <li><a href="#multiscreen">Multiple Screens</a></li>
           <li><a href="#resizable">Resizable Frame</a></li>
           <li><a href="#basic">Specify Screen Size</a></li>
-          <li id="specialButton"><a href="#about">About This Project</a></li>
+          <li id="specialButton"><a href="about.html">About This Project</a></li>
         </ul>
       </nav>
     </header>
@@ -45,7 +45,7 @@
     <section class="presized" id="multiscreen" position="relative";>
     
       <h1>Display a site in phone, tablet, and desktop size</h1>
-     
+
       <form id="multiInput">
         <i class="fa fa-external-link"></i>
         <input id="murl" name="murl" class="website" type="text" placeholder="Enter site url." />
@@ -53,15 +53,15 @@
       </form>
       
       <div class="wrap" id="wDisSm">   
-        <iframe id="mDisSm" name="mDisSm" class="multiScreen frame" security="restricted"></iframe>
+        <iframe sandbox="allow-same-origin allow-scripts" id="mDisSm" name="mDisSm" class="multiScreen frame" security="restricted"></iframe>
       </div>
       
       <div class="wrap" id="wDisMed">   
-        <iframe id="mDisMed" name="mDisMed" class="multiScreen frame" security="restricted"></iframe>
+        <iframe sandbox="allow-same-origin allow-scripts" id="mDisMed" name="mDisMed" class="multiScreen frame" security="restricted"></iframe>
       </div>
       
       <div class="wrap" id="wDisLar"> 
-        <iframe id="mDisLar" name="mDisLar" class="multiScreen frame" security="restricted"></iframe>
+        <iframe sandbox="allow-same-origin allow-scripts" id="mDisLar" name="mDisLar" class="multiScreen frame" security="restricted"></iframe>
       </div>
       
     </section>
@@ -79,7 +79,7 @@
       </form>
      
       <div id="rescaleDiv" class="ui-widget-content">
-        <iframe id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
+        <iframe sandbox="allow-same-origin allow-scripts" id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
       </div>
     
     </section>
@@ -110,43 +110,8 @@
         <input name="usubmit" type="button" onclick="userSubmit();" value="Update" />
       </form>
       
-      <iframe id="displayPage" name="displayPage"></iframe>
+      <iframe sandbox="allow-same-origin allow-scripts"  id="displayPage" name="displayPage"></iframe>
   
-    </section> 
-    
-    <section id="about">
-      <h1>About Screen Emulator</h1>
-      
-      <h2>Why is responsive design important?</h2>
-      <p>Responsive design is important because at any given time, your site or app will be accessed by a number of different devices. Screen sizes and form factors keep changing. Designing with multiple sizes in mind and recognizing breakpoints in your design (places where you need to adjust for a smaller or larger screen) helps keep your code future friendly and accessible to more screens. (One code base to rule them all.)</P> 
-      
-      <h2>Why a screen emulator?</h2>
-      <p>This is a responsive design tool. If you've ever designed responsively, testing different browsers and screen sizes is incredibly important. This is a simple, free tool to test sites and apps. Sometimes designing and developing responsively involves considering screen sizes and pixel counts that you may not have access to with your current screen size or device. Or you might need to quickly see if a site is responsive. This tool lets you specify dimensions and view what that site looks like at that size or resolution. This is not a replacement for testing on real devices.</p>
-      <p>Feel free to download the tool and use it for your local projects.</p>
-      <p>This application is currently under development. Your feedback is welcome. You can <a href="https://github.com/emitche/screenemulator">get the source code</a> on GitHub.
-      
-      <h2>Responsive Design Resources</h2>
-      
-      <dl> 
-        <dt><a href="http://ami.responsivedesign.is/">Am I Responsive</a></dt>
-        <dd>Responsive tool that offers a high level overview of what a site looks in mobile, tablet, laptop, and desktop views.</dd>
-        
-        <dt><a href="http://www.opera.com/developer/mobile-emulator">Opera Mobile Emulator</a></dt>
-        <dd>Test sites in mobile and tablet browsers.</dd>
-        
-        <dt><a href="http://screensiz.es">Screen Siz.es</a></dt>
-        <dd>List of screen sizes for common phone, tablet, and display screens. Sizes displayed here are a rough estimate of the average from these lists.</dd>
-        
-        <dt><a href="http://pxtoem.com/">PXtoEM.com</a></dt>
-        <dd>Pixel to em conversion and em to pixel conversion.</dd>
-      </dl>
-      
-       <h2>Hey, my site won't load!</h2>
-       
-       <p>This app uses iframes. Some sites do not support displaying their site in an iframe for security reasons (Google, Yahoo, Reddit).</p>
-       
-       <p>The online version does not support local files yet, but you can <a href="https://github.com/emitche/screenemulator">download the project</a> and use it for your local files.</p>
-           
     </section>
     
   </body>
