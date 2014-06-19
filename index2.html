@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>Screen Emulator</title>
+  
+  <meta name="description" content="A screen emulator tool for responsive design." />
+  <meta name="keywords" content="responsive design, screen emulator, testing responsive design" />
+  <meta charset="UTF-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <!--<link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui-1.10.3.custom/css/graytheme/jquery-ui-1.10.3.custom.css" />-->
+  <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui-1.10.4/css/redmond/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/screen.css" />
+  
+	
+  <script type="text/javascript" src="js/jquery-1.11.1.js" /></script>
+  <!--<script type="text/javascript" src="jqueryui/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>-->
+  <script type="text/javascript" src="jqueryui/jquery-ui-1.10.4/js/jquery-ui-1.10.4.js"></script>
+  <!-- Add Touch hack here -->
+  <script type="text/javascript" src="jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/screen.js" /></script>
+  <link href="css/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+  </head>
+  
+  <body>
+	
+    <header>
+      <h1><a href="index.html">Screen Emulator</a></h1>
+      
+      <p>A tool for web developers and designers to view sites on different screen sizes in one place.</p>
+      
+      <p>There are currently three options for the screen emulator. Choose your tool, then insert the link you wish to test or display.</p>
+      
+      <nav>
+        <ul>
+          <li><a href="#multiscreen">Multiple Screens</a></li>
+          <li><a href="#resizable">Resizable Frame</a></li>
+          <li><a href="#basic">Specify Screen Size</a></li>
+          <li id="specialButton"><a href="about.html">About This Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="presized" id="multiscreen" position="relative";>
+    
+      <h1>Display a site in phone, tablet, and desktop size</h1>
+
+      <form id="multiInput">
+        <i class="fa fa-external-link"></i>
+        <input id="murl" name="murl" class="website" type="text" placeholder="Enter site url." />
+        <input name="msubmit" type="button" onclick="multiSubmit();" value="Update" />
+      </form>
+      
+      <div class="wrap" id="wDisSm">   
+        <iframe sandbox="allow-same-origin allow-scripts" id="mDisSm" name="mDisSm" class="multiScreen frame" security="restricted"></iframe>
+      </div>
+      
+      <div class="wrap" id="wDisMed">   
+        <iframe sandbox="allow-same-origin allow-scripts" id="mDisMed" name="mDisMed" class="multiScreen frame" security="restricted"></iframe>
+      </div>
+      
+      <div class="wrap" id="wDisLar"> 
+        <iframe sandbox="allow-same-origin allow-scripts" id="mDisLar" name="mDisLar" class="multiScreen frame" security="restricted"></iframe>
+      </div>
+      
+    </section>
+    
+    <section class="draggable" id="resizable">
+    
+      <h1>Display a site in a resizable frame</h1>
+    
+      <p>This feature is not optimized for touch experiences.</p>
+      
+      <form id="resizableInput">
+        <i class="fa fa-external-link"></i>
+        <input id="rurl" name="rurl" class="website" type="text" placeholder="Enter site url." />
+        <input name="rsubmit" type="button" onclick="resizableSubmit();" value="Update" />
+      </form>
+     
+      <div id="rescaleDiv" class="ui-widget-content">
+        <iframe sandbox="allow-same-origin allow-scripts" id="rDisplay" name="rDisplay" class="ui-widget-content"></iframe>
+      </div>
+    
+    </section>
+      
+    <section class="basic" id="basic">
+    
+      <h1>Display a site with a specific screen size</h1>
+      
+      <p>Example: http://duckduckgo.com, 400, 200. (Units (px) are automatically added.)</p>
+      
+      <form id="userInput">
+        <span class="inputs">
+          <i class="fa fa-external-link"></i>
+          <label for="uurl">site:</label>
+          <input id="uurl" name="uurl" class="website uInput" type="text" placeholder="Enter site url." />
+        </span>
+        <span class="inputs">
+          <i class="fa fa-arrows-h"></i>
+          <label for="displayWidth">width:</label>
+          <input id="dWidth" name="displayWidth" class="sizePar uInput" type="text" placeholder="width in pixels" />
+        </span>
+        <span class="inputs">
+          <i class="fa fa-arrows-v"></i>
+          <label for="displayHeight">height:</label>
+          <input id="dHeight" name="displayHeight" class="sizePar uInput" type="text" placeholder="height in pixels" />
+        </span>
+         
+        <input name="usubmit" type="button" onclick="userSubmit();" value="Update" />
+      </form>
+      
+      <iframe sandbox="allow-same-origin allow-scripts"  id="displayPage" name="displayPage"></iframe>
+  
+    </section>
+    
+  </body>
+  
+</html>
