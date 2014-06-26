@@ -138,9 +138,15 @@
 
     /* Iframe for resizeable tool */
   
-      #rDisplay {
-      width: 99%;
-      padding: .02em .02em;
+	#rescaleDiv  {
+		width: 80%;
+		padding: .25%;
+		margin: 1%;
+	}
+      
+	#rDisplay {
+      width: 95%;
+      margin: 2%;
       }
 
   
