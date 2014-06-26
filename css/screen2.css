@@ -1,0 +1,318 @@
+﻿/* Screen Emulator */
+
+/* Helper Styles */
+
+  /* apply a natural box layout model to all elements */
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+   }
+
+/* General Styles */
+
+  body {
+  font-size: 100%;
+  background-color: #eef2f3;
+  background-color: rgba(238, 242, 243, 1);
+  background-color: rgba(235, 235, 235, 1);
+  font-family: Verdana, Arial, sans-serif;
+  padding: 1%;
+  }
+  
+  section {
+  margin: 1% 0;
+  padding: 1%;
+  }
+  
+  a {
+  color:  rgba(234,48,4,1);
+  }
+  
+  i {
+  font-size: 2em;
+  }
+
+/* Navigation */
+
+  nav {
+  background-color: inherit;
+  padding: 2% 0 .5% 0;
+  border-radius: 2px;
+  font-weight: bold;
+  color: white;
+  font-size: 115%;
+  }
+
+  nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+  nav ul li {
+  background-color: rgba(76,150,193,1);
+  display: inline-block;
+  padding: 1% 1% 1% 1%;
+  margin: 1% .1% 1.5% .1%;
+  border-radius: 4px;
+  }
+
+  nav ul li:hover, #specialButton:hover {
+  background-color: white;
+  color: black;
+  border: solid 2px rgba(76,150,193,1);
+  }
+
+  header a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+  #specialButton {
+  background-color: rgba(234,48,4,1);
+  }
+
+/* Sections */  
+  
+  iframe {
+  border: none;
+  border: solid black 1px;
+  padding: .25%;
+  padding: 1px;
+  border-radius: 2px;
+  display: block;
+  }
+  
+  input, button, iframe {
+  margin: .5%;
+  margin: 2px;
+  }
+  
+  /* Buttons */
+  
+    button, input[type='button'], input[type='submit'] {
+    background-color: rgba(76,150,193,1);
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    font-size: 100%;
+    }
+  
+  /* Text Inputs */
+  
+    input[type='text'] {
+    font-size: 100%;
+    border-radius: 4px;
+    border: none;
+    padding: .5%;
+    border: solid black 1px;
+    }
+    
+    /* Size of url boxes */
+    .website {
+    width: 20em;
+    max-width: 100%;
+    }
+
+    /* Size of parameter boxes*/
+    .sizePar {
+    width: 10em;
+    }
+    
+    /* Inputs for Specify Screen Size Tool */
+    span.inputs, input[type='button']  {
+    display: inline-block;
+    margin: 1% 0;
+    }
+    
+    #userInput label {
+    font-weight: bold;
+    }
+    
+    #userInput input[type='text'] {
+    padding: 2%;
+    }
+
+    /* Iframe for resizeable tool */
+  
+      #rDisplay {
+      width: 99%;
+      padding: .02em .02em;
+      }
+
+  
+    /* Address lack of touch functionality for resizeable tool */
+
+	/* Add visibility of resizeable tool
+	
+      @media (max-width: 800px) {
+       
+        #resizableInput {
+        display: none;
+        }
+      
+        #rescaleDiv {
+        display: none;
+        }
+      }
+	*/
+      
+  /* Resource List */
+
+    dl, dd, dt {
+    margin: 0;
+    padding: 0;
+    }
+    
+    dt {
+    font-weight: bold;
+    }
+    
+    dd {
+    padding: 0 0 1% 0;
+    }
+  
+  
+/* Resize Iframes */
+  
+  /* Overall styles for multi-submit frames. */
+  
+    /* Wrapper */
+    .wrap {
+      padding: 0; 
+      overflow: hidden;
+    }
+
+    /* Frame */
+    .frame {
+      -moz-transform-origin: 0 0;
+      -o-transform-origin: 0 0;
+      -webkit-transform-origin: 0 0;
+    }
+
+  /* Beginning Sizing for Frames */
+  
+   /* Mobile display */
+    #wDisSm {
+      width: 330px; 
+      height: 405px;
+    }
+
+    /* ratio = 0.7619047619047619 */
+    #mDisSm {
+      width: 320px; 
+      height: 400px;
+    }
+
+   /* Tablet display */
+    #wDisMed {
+    }
+
+    /* ratio = 0.625 */
+    #mDisMed {
+      width: 800px; 
+      height: 1280px;
+    }
+
+  /* Desktop display */
+    #wDisLar {
+      width: 1150px; 
+      height: 650px;
+    }
+
+    /* ratio = 1.778645833333333 */
+    #mDisLar {
+      width: 1366px;
+      height: 768px;
+     
+      -moz-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);  
+    }
+
+  /* Media Queries */
+  
+    @media screen and (max-width:1150px) {
+
+      #wDisLar {
+        width: 800px; 
+        height: 450px;
+      }
+
+      #mDisLar {
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);  
+      }
+
+      #wDisMed {
+        width: 700px; 
+        height: 900px;
+      }
+
+      #mDisMed {
+        -moz-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);  
+      }
+    }
+
+    @media screen and (max-width:800px) {
+
+      #wDisLar {
+        width: 600px; 
+        height: 350px;
+      }
+
+      #mDisLar {
+        -moz-transform: scale(0.4);
+        -o-transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        transform: scale(0.4);  
+      }
+    }
+
+    @media screen and (max-width:600px) {
+
+      #wDisLar {
+        width: 400px; 
+        height: 250px;
+      }
+
+      #mDisLar {
+        -moz-transform: scale(0.25);
+        -o-transform: scale(0.25);
+        -webkit-transform: scale(0.25);
+        transform: scale(0.25);  
+      }
+
+      #wDisMed {
+        width: 350px; 
+        height: 400px;
+      }
+
+      #mDisMed {
+        -moz-transform: scale(0.3);
+        -o-transform: scale(0.3);
+        -webkit-transform: scale(0.3);
+        transform: scale(0.3);  
+      }
+
+      #wDisSm {
+        width: 200px; 
+        height: 205px;
+      }
+
+      #mDisSm {
+        -moz-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);  
+      }
+    }
